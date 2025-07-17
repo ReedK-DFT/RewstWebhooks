@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>RewstWebhooks</RootNamespace>
+    <TargetFramework>net9.0</TargetFramework>
+    <ApplicationIcon>rewst-webhooks.ico</ApplicationIcon>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>Rewst Webhooks</Title>
+    <Authors>Reed Kimble</Authors>
+    <Company>Dragonfly Technologies</Company>
+    <Description>A simple interface for integrating Rewst Webhooks into your project.</Description>
+    <PackageIcon>rewst-webhooks-128.png</PackageIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="rewst-webhooks.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\..\Downloads\rewst-webhooks-128.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
