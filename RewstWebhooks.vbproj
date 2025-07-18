@@ -13,6 +13,10 @@
     <PackageProjectUrl>https://github.com/ReedK-DFT/RewstWebhooks</PackageProjectUrl>
     <RepositoryUrl>https://github.com/ReedK-DFT/RewstWebhooks</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <Copyright>Copyright © Dragonfly Technologies, LLC 2025</Copyright>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageTags>rewst;webhook</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
@@ -21,6 +25,13 @@
 
   <ItemGroup>
     <None Include="..\..\..\..\Downloads\rewst-webhooks-128.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="README.md">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>

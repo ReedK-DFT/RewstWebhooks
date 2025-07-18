@@ -1,9 +1,45 @@
 
 # RewstWebhooks
 
-Simple library for handling webhooks in Rewst.
+*A simple library for managing and calling webhooks in Rewst.*
 
-## Example
+## Description
+
+While it is easy enough to call a Rewst webhook from a .Net application using HttpClient without any additional libraries, consuming a variety of webhooks and managing their various input parameters and secrets requires some amount of scaffolding. This library facilitates all of that and more.  
+
+Webhook secrets can be registered in the WebhookClient by name and then referenced in a webhook definition.
+```vb.net
+  client.RegisterSecret("my-workflow-secret", My.Settings.RewstSecret, True)
+```
+
+Webhook definitions can be written in Json following a common schema and can be imported as a WebhookCollection.  Example:
+```json
+{
+  "name": "<unique name for webhook>",
+  "description": "<descrption of purpose (used by AI agents)>",
+  "url": "<the URL to the webhook in Rewst>",
+  "method": "POST",
+  "parameter": {
+    "type": "object",
+    "properties": {
+      "<parameter_name>": {
+        "type": "<parameter_type>",
+        "description": "<description of the parameter (used by AI agents)>"
+      }
+    },
+    "required": [
+      "<parameter_name> (if required)"
+    ]
+  },
+  "secret": "<secret name>"
+}
+```
+The parameter and secret can be null or omitted if not needed by the webhook. The required property should be an empty array if no parameters are required.  
+
+In addition to defining Webhook object instances, you can also use one of the overloads of the CallRawWebhookAsync method to call a URL string and pass parameters as a JsonObject, list of key-value pairs or string tuples.
+
+## Example Windows Forms Application
+
 ```vb.net
 
 Imports System.Text.Json.Nodes
