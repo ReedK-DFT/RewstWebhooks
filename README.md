@@ -64,3 +64,82 @@ Public Class Form1
 
 End Class
 ```
+## Example Webhooks JSON File
+```json
+{
+  "webhooks": [
+    {
+      "name": "list_devices",
+      "description": "List devices for a company",
+      "url": "https://engine.rewst.io/webhooks/custom/trigger/000-id-000/1111-id-00011",
+      "method": "POST",
+      "parameter": {
+        "type": "object",
+        "properties": {
+          "company": {
+            "type": "string",
+            "description": "The name of the company to filter by."
+          }
+        },
+        "required": [
+          "company"
+        ]
+      },
+      "secret": "Default"
+    },
+    {
+      "name": "list_companies",
+      "description": "List the companies that are clients of Dragonfly Technologies",
+      "url": "https://engine.rewst.io/webhooks/custom/trigger/000-id-000/1111-id-00012",
+      "method": "POST",
+      "parameter": null,
+      "secret": "Default"
+    },
+    {
+      "name": "find_person",
+      "description": "Finds name and id information for the person matching the given name",
+      "url": "https://engine.rewst.io/webhooks/custom/trigger/000-id-000/1111-id-00013",
+      "method": "POST",
+      "parameter": {
+        "type": "object",
+        "properties": {
+          "firstname": {
+            "type": "string",
+            "description": "The first name (given name) of the person to filter by."
+          },
+          "lastname": {
+            "type": "string",
+            "description": "The last name (surname) of the person to filter by."
+          },
+          "email": {
+            "type": "string",
+            "description": "The email address of the person to filter by."
+          }
+        },
+        "required": [
+        ]
+      },
+      "secret": "Default"
+    },
+    {
+      "name": "get_ticket_schedule_entries",
+      "description": "Get the schedule entries for a service ticket, including the assigned engineer and the time of the appointment",
+      "url": "https://engine.rewst.io/webhooks/custom/trigger/000-id-000/1111-id-00014",
+      "method": "POST",
+      "parameter": {
+        "type": "object",
+        "properties": {
+          "ticketid": {
+            "type": "integer",
+            "description": "The name ticket id/number."
+          }
+        },
+        "required": [
+          "ticketid"
+        ]
+      },
+      "secret": "Default"
+    }
+  ]
+}
+```
