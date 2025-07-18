@@ -17,6 +17,7 @@
     <Copyright>Copyright © Dragonfly Technologies, LLC 2025</Copyright>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageTags>rewst;webhook</PackageTags>
+    <PackageLicenseExpression>GPL-3.0-only</PackageLicenseExpression>
   </PropertyGroup>
 
   <ItemGroup>

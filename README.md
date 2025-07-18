@@ -1,7 +1,9 @@
 
 # RewstWebhooks
 
-*A simple library for managing and calling webhooks in Rewst.*
+*A simple library for managing and calling webhooks in Rewst.*  
+[![NuGet](https://img.shields.io/nuget/v/RewstWebhooks.svg)](https://www.nuget.org/packages/RewstWebhooks/)
+[![License](https://img.shields.io/github/license/ReedK-DFT/RewstWebhooks.svg)](https://github.com/ReedK-DFT/RewstWebhooks/blob/master/LICENSE.txt)
 
 ## Description
 
