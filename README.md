@@ -4,7 +4,7 @@
 Simple library for handling webhooks in Rewst.
 
 ## Example
-```vb-net
+```vb.net
 
 Imports System.Text.Json.Nodes
 Imports RewstWebhooks
