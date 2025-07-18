@@ -10,6 +10,9 @@
     <Company>Dragonfly Technologies</Company>
     <Description>A simple interface for integrating Rewst Webhooks into your project.</Description>
     <PackageIcon>rewst-webhooks-128.png</PackageIcon>
+    <PackageProjectUrl>https://github.com/ReedK-DFT/RewstWebhooks</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/ReedK-DFT/RewstWebhooks</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
   </PropertyGroup>
 
   <ItemGroup>
